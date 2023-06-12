@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Kratin_App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## _Workspace: Kratin Assignment_
+---
+#### Problem Statement: How can you help Sunita Sharma (65+ years old) to live a healthier and better life?
 
-## Available Scripts
+Identify one use case for elderly care (for the age group 65+) and create a working prototype to demonstrate your idea using technology known to you.
+___
+### Description:
 
-In the project directory, you can run:
+#### *What is To-do list?*
 
-### `npm start`
+> To-do list a React.js based application which provides many features like add to-do item in the list, delete items from the list, time of to-do item, user guide and many more.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### *Why To-do list application?*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Generally, people aged 65+ tend to forget things easily. To help with reminders for daily tasks, a to-do list application is a great option.
 
-### `npm test`
+> Lets assume that the user is a diabetic and has high blood pressure, she needs regular physical activities as well as mental activities, which are included in the sample to-do list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> The user also needs a proper diet and should take medication regularly. In many cases, a patient may require a companion to take care of them. This to-do application will simplify these tasks for the patient.
 
-### `npm run build`
+#### Features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### *Add To-do Item:-*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> If she wants to add any other activities like doctor appointments or anything else beyond the daily activities, she can easily add a task to the list with a simple "add" button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### *Delete To-do Item:-*
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> Whenever a task is completed, the user can strike off the to-do item with a single click. The user can also undo completed tasks.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Future Scope:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+There can be many improvements that can made in the future. Such improvements like:-
 
-## Learn More
+> Alerts message and text message to remind the user if she forget to complete the to-do item task.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> This application has future scope, such as persisting the to-do list in local storage using JSON methods.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> We can use react-toast to many application more animated and user friendly. Adding animations to cheer up the user every time they strike off a task.
 
-### Code Splitting
+> The possibilities for application development are endless, as there are unlimited customizations that can be made.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Code Summery:
 
-### Analyzing the Bundle Size
+> This code is a React component for a simple todo list application. It allows users to add tasks, mark them as completed, and delete them from the list. The component maintains a state with two properties: todosList and newTodoInput. The todosList holds an initial list of todos, while newTodoInput stores user input for adding new todos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> The initial list of tasks is defined in the initialTodosList array. Each task has an ID, a title, and a status indicating whether it is checked or not.
 
-### Making a Progressive Web App
+> The component includes methods to handle user interactions. onChangeUserInput updates the newTodoInput state as the user types in the input box. onClickAddBtn adds a new todo to the todosList state with a unique ID and the title from the newTodoInput. It also clears the input box. It shows an alert to interact with the user on empty input and confirm the addition of a task to the list. ChangeTodoStatus toggles the checked/unchecked status of a todo based on its ID. deleteTodo removes a todo from the todosList state based on its ID and shows an alert to confirm the deletion. completingTodoList checks if the todo list is empty and displays a completion message if so.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> The render method defines the structure of the todo list application using JSX. It includes headings, input fields, buttons, and a list of todos. It maps through the todosList state and renders a TodoItem component for each todo, passing the necessary props. The TodoItem component handles the display and functionality of individual todos.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Overall, the code creates a functional todo list application that allows users to manage tasks by adding, marking as completed, and deleting them. It provides a user-friendly interface and incorporates React's component-based architecture.
