@@ -55,3 +55,8 @@ There can be many improvements that can made in the future. Such improvements li
 > The render method defines the structure of the todo list application using JSX. It includes headings, input fields, buttons, and a list of todos. It maps through the todosList state and renders a TodoItem component for each todo, passing the necessary props. The TodoItem component handles the display and functionality of individual todos.
 
 > Overall, the code creates a functional todo list application that allows users to manage tasks by adding, marking as completed, and deleting them. It provides a user-friendly interface and incorporates React's component-based architecture.
+
+
+![Project Image 1](https://github.com/thisway2shubham/Kratin_App/blob/master/Screenshot%202023-06-12%20152017.png)
+![Project Image 2](https://github.com/thisway2shubham/Kratin_App/blob/master/Screenshot%202023-06-12%20151203.png)
+![Project Image 3](https://github.com/thisway2shubham/Kratin_App/blob/master/Screenshot%202023-06-12%20151259.png)
